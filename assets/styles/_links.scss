@@ -1,11 +1,35 @@
-.button-external,
-.button-inline,
-.button-internal {
+a {
+	color: $inline-link;
+	cursor: pointer;
+	background: transparent;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		color: $inline-link-hover;
+	}
+
+	p {
+		color: $black;
+	}
+}
+
+.link-proxy {
+	color: $inline-link;
+}
+
+.link-wrapper {
+	text-align: center;
+}
+
+%button {
+	border: none;
 	display: inline-block;
 	line-height: 1;
 	min-width: 185px;
 	padding: 20px 25px 18px 25px;
 	text-align: center;
+	text-decoration: none;
 
 	@media only screen and (max-width: 350px) {
 		min-width: 140px;
@@ -14,9 +38,9 @@
 }
 
 .button-internal {
+	@extend %button;
 	background-color: $button-internal;
 	color: $button-external;
-	border: none;
 
 	&:hover,
 	&:focus {
@@ -27,25 +51,10 @@
 		content: $icon-arrow-right;
 		vertical-align: middle;
 	}
-
-}
-
-.button-inline {
-	background-color: $button-inline;
-	color: white;
-
-	&:hover,
-	&:focus {
-		background-color: $button-inline-hover;
-		color: white;
-	}
-	&.icon-down:after {
-		content: $icon-arrow-down;
-		vertical-align: middle;
-	}
 }
 
 .button-external {
+	@extend %button;
 	background-color: $button-external;
 	color: white;
 
@@ -59,8 +68,4 @@
 		content: $icon-export;
 		margin-left: 10px;
 	}
-}
-
-.button-wrapper {
-	text-align: center;
 }
