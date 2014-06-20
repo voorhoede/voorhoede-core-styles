@@ -26,7 +26,7 @@ module.exports = function (grunt) {
 		},
 		watch: {
 			styles: {
-				files: 'styles/**/*',
+				files: 'assets/styles/**/*',
 				tasks: ['sass:distribution']
 			}
 		}
