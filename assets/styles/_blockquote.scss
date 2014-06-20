@@ -1,0 +1,29 @@
+blockquote {
+	background: #f9f9f9;
+	border-left: 2px solid $dvh-blue;
+	padding: 10px;
+	//The quotes CSS property indicates how user agents should render quotation marks.
+	quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before,
+blockquote:after {
+	color: $dvh-blue;
+	font-size: 3em;
+	line-height: 0.1em;
+	vertical-align: -0.4em;
+}
+
+blockquote:before {
+	content: open-quote;
+	margin-right: 4px;
+}
+
+blockquote:after {
+	content: close-quote;
+	margin-left: 4px;
+}
+
+blockquote p {
+	display: inline;
+}

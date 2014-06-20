@@ -58,6 +58,17 @@ h1, h2, h3, h4 {
 	hyphens: none;
 }
 
+::selection {
+	background-color: $dvh-green;
+	color: white;
+}
+
+::-moz-selection {
+	background-color: $dvh-green;
+	color: white;
+}
+
+
 p, ul {
 	font-size: 1em;
 	margin: 0.5em 0;
