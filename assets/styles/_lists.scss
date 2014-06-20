@@ -1,0 +1,26 @@
+.bullet-list {
+	font-size: 1.0em;
+	margin: 0 0 1em 1em;
+	text-align: left;
+}
+
+ol {
+	margin: 0 0 1em 1em;
+}
+
+dl {
+	margin: 0 0 1em 0;
+}
+
+dt {
+	color: $dvh-blue;
+	font-weight: bold;
+
+	&:after {
+		content: ":";
+	}
+}
+
+dd {
+	line-height: 1.4em;
+}

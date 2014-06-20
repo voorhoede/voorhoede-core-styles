@@ -162,6 +162,26 @@ a {
     content: "\e600";
     margin-left: 10px; }
 
+.bullet-list {
+  font-size: 1.0em;
+  margin: 0 0 1em 1em;
+  text-align: left; }
+
+ol {
+  margin: 0 0 1em 1em; }
+
+dl {
+  margin: 0 0 1em 0; }
+
+dt {
+  color: #00373d;
+  font-weight: bold; }
+  dt:after {
+    content: ":"; }
+
+dd {
+  line-height: 1.4em; }
+
 .button-internal, .button-external, .button-inline {
   border: none;
   display: inline-block;
@@ -188,6 +208,7 @@ a {
 blockquote {
   background: #f9f9f9;
   border-left: 2px solid #00373d;
+  margin: 0 0 1em 0;
   padding: 10px;
   quotes: "\201C" "\201D" "\2018" "\2019"; }
 
