@@ -8,22 +8,9 @@ a {
 	&:focus {
 		color: $inline-link-hover;
 	}
-
-	p {
-		color: $black;
-	}
 }
 
-.link-proxy {
-	color: $inline-link;
-}
-
-.link-wrapper {
-	text-align: center;
-}
-
-%button {
-	border: none;
+%block-link {
 	display: inline-block;
 	line-height: 1;
 	min-width: 185px;
@@ -37,8 +24,8 @@ a {
 	}
 }
 
-.button-internal {
-	@extend %button;
+.internal-link {
+	@extend %block-link;
 	background-color: $button-internal;
 	color: $button-external;
 
@@ -53,8 +40,8 @@ a {
 	}
 }
 
-.button-external {
-	@extend %button;
+.external-link {
+	@extend %block-link;
 	background-color: $button-external;
 	color: white;
 
