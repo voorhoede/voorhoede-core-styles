@@ -1,2 +1,96 @@
+@font-face {
+  font-family: 'pt-sans-bold';
+  src: url("assets/fonts/pt-sans-bold.eot");
+  src: url("assets/fonts/pt-sans-bold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/pt-sans-bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Questrial';
+  src: url("assets/fonts/questrial-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 body {
-  background-color: blue; }
+  font-family: "Questrial", Arial, Calibri, Verdana, sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 1.6; }
+
+h1, h2, h3, h4 {
+  color: #00373d;
+  font-family: "pt-sans-bold", sans-serif;
+  font-weight: normal;
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 1.6;
+  /* webkit does not (yet) support this  */
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  hyphens: none; }
+
+p, ul {
+  font-size: 1em;
+  margin: 0.5em 0; }
+
+ul {
+  padding-left: 2em; }
+
+h1 {
+  font-size: 2.0em; }
+
+h2 {
+  font-size: 1.5em; }
+
+h3 {
+  font-size: 1.353em; }
+
+h4 {
+  font-size: 1.059em; }
+
+.button-external,
+.button-inline,
+.button-internal {
+  display: inline-block;
+  line-height: 1;
+  min-width: 185px;
+  padding: 20px 25px 18px 25px;
+  text-align: center; }
+  @media only screen and (max-width: 350px) {
+    .button-external,
+    .button-inline,
+    .button-internal {
+      min-width: 140px;
+      padding: 10px 15px 10px 15px; } }
+
+.button-internal {
+  background-color: #ebdd3f;
+  color: #00373d;
+  border: none; }
+  .button-internal:hover, .button-internal:focus {
+    background-color: #f5e749;
+    color: #00373d; }
+  .button-internal.icon-right:after {
+    content: "\e605";
+    vertical-align: middle; }
+
+.button-inline {
+  background-color: #e65e3e;
+  color: white; }
+  .button-inline:hover, .button-inline:focus {
+    background-color: #eb6c4e;
+    color: white; }
+  .button-inline.icon-down:after {
+    content: "\e603";
+    vertical-align: middle; }
+
+.button-external {
+  background-color: #00373d;
+  color: white; }
+  .button-external:hover, .button-external:focus {
+    background-color: #0f4c53;
+    color: white; }
+  .button-external:after {
+    content: "\e600";
+    margin-left: 10px; }
+
+.button-wrapper {
+  text-align: center; }

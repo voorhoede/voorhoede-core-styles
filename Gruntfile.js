@@ -20,13 +20,13 @@ module.exports = function (grunt) {
 		sass: {
 			distribution: {
 				files: {
-					'core.css': 'core.scss'
+					'core.css': 'assets/styles/core.scss'
 				}
 			}
 		},
 		watch: {
 			styles: {
-				files: 'core.scss',
+				files: 'styles/**/*',
 				tasks: ['sass:distribution']
 			}
 		}
