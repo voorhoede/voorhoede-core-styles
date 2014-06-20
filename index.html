@@ -32,11 +32,6 @@
 		<!-- inline HTML elements -->
 		<section>
 			<dl>
-				<dt><abbr title="text in the title attribute will appear when the user's mouse hovers over the abbreviation">abbr</abbr></dt>
-				<dd>Represents an abbreviation and optionally provides a full description for it.
-					Text in the title attribute will appear when the user's mouse hovers over the
-					abbreviation.
-				</dd>
 				<dt><code>code</code></dt>
 				<dd>
 					Represents a fragment of computer code.
@@ -48,11 +43,15 @@
 				</dd>
 			</dl>
 		</section>
+		<!-- blockquote -->
 		<section>
 			<blockquote>
 				The blockquote represents a content that is quoted from another source. A URL for
 				the source of the quotation may be given using the cite attribute.
 			</blockquote>
+		</section>
+		<!-- lists -->
+		<section>
 			<ul class="bullet-list">
 				<li>
 					List item
@@ -83,6 +82,18 @@
 				<dd>another definition for the item</dd>
 			</dl>
 		</section>
+		<!-- figure -->
+		<figure>
+			<img
+				class="site-logo"
+				src="assets/images/logo.svg"
+				onerror="this.src='assets/images/logo.min.png'"
+				alt="[Logo]"
+			    height="75"
+			    width="75"
+				>
+			<figcaption>the figcaption represents a caption or a legend associated with a figure or an illustration</figcaption>
+		</figure>
 	</main>
 
 </body>
