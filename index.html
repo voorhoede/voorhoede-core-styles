@@ -25,8 +25,8 @@
 		</section>
 		<!-- links -->
 		<section>
-			<a href="#internal" class="button-internal voorhoede-icon icon-right">internal block link</a>
-			<a href="#external" class="button-external voorhoede-icon">external block link</a>
+			<a href="#internal" class="internal-link voorhoede-icon icon-right">internal block link</a>
+			<a href="#external" class="external-link voorhoede-icon">external block link</a>
 			<a href="#inline">inline link</a>
 		</section>
 		<!-- inline HTML elements -->
@@ -45,7 +45,7 @@
 		</section>
 		<!-- blockquote -->
 		<section>
-			<blockquote>
+			<blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
 				The blockquote represents a content that is quoted from another source. A URL for
 				the source of the quotation may be given using the cite attribute.
 			</blockquote>
@@ -83,17 +83,65 @@
 			</dl>
 		</section>
 		<!-- figure -->
-		<figure>
-			<img
-				class="site-logo"
-				src="assets/images/logo.svg"
-				onerror="this.src='assets/images/logo.min.png'"
-				alt="[Logo]"
-			    height="75"
-			    width="75"
-				>
-			<figcaption>the figcaption represents a caption or a legend associated with a figure or an illustration</figcaption>
-		</figure>
+		<section>
+			<figure>
+				<img
+					class="site-logo"
+					src="assets/images/logo.svg"
+					onerror="this.src='assets/images/logo.min.png'"
+					alt="[Logo]"
+				    height="75"
+				    width="75"
+					>
+				<figcaption>the figcaption represents a caption or a legend associated with a figure or an illustration</figcaption>
+			</figure>
+		</section>
+		<!-- form elements -->
+		<section>
+			<form>
+				<label for="input">name</label>
+				<input id="input" type="text" placeholder="enter your name">
+
+				<label for="textarea">message</label>
+				<textarea id="textarea" placeholder="leave a message"></textarea>
+
+				<button class="button-inline">button</button>
+			</form>
+		</section>
+		<!-- table -->
+		<section>
+			<table>
+				<thead>
+					<tr>
+						<th scope="col">Country</th>
+						<th scope="col">Capital</th>
+						<th scope="col">Population</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>The Netherlands</td>
+						<td>Amsterdam</td>
+						<td>16.858.189</td>
+					</tr>
+					<tr>
+						<td>Belgium</td>
+						<td>Brussels</td>
+						<td>11.858.189</td>
+					</tr>
+					<tr>
+						<td>Switzerland</td>
+						<td>Bern</td>
+						<td>7.858.189</td>
+					</tr>
+					<tr>
+						<td>Croatia</td>
+						<td>Zagreb</td>
+						<td>4.858.189</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
 	</main>
 
 </body>

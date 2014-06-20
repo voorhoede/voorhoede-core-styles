@@ -430,32 +430,52 @@ blockquote:after {
 blockquote p {
   display: inline; }
 
+figure {
+  margin-bottom: 1em; }
+
 figcaption {
   color: #798386;
   font-size: 0.824em; }
 
-.button-inline, .button-internal, .button-external {
+input,
+textarea {
+  border: 1px solid #a2acaf;
+  padding: 6px 3px; }
+
+::-webkit-input-placeholder {
+  color: #a2acaf; }
+
+::-moz-placeholder {
+  color: #a2acaf; }
+
+/* firefox 19+ */
+:-ms-input-placeholder {
+  color: #a2acaf; }
+
+/* ie */
+input:-moz-placeholder {
+  color: #a2acaf; }
+
+button {
   border: none;
   display: inline-block;
   line-height: 1;
   min-width: 185px;
   padding: 20px 25px 18px 25px;
   text-align: center;
-  text-decoration: none; }
-  @media only screen and (max-width: 350px) {
-    .button-inline, .button-internal, .button-external {
-      min-width: 140px;
-      padding: 10px 15px 10px 15px; } }
-
-.button-inline {
+  text-decoration: none;
   background-color: #e65e3e;
   color: white; }
-  .button-inline:hover, .button-inline:focus {
+  button:hover, button:focus {
     background-color: #eb6c4e;
     color: white; }
-  .button-inline.icon-down:after {
+  button.icon-down:after {
     content: "\e603";
     vertical-align: middle; }
+  @media only screen and (max-width: 350px) {
+    button {
+      min-width: 140px;
+      padding: 10px 15px 10px 15px; } }
 
 @font-face {
   font-family: 'voorhoede-icon-font';
@@ -513,17 +533,8 @@ a {
   text-decoration: none; }
   a:hover, a:focus {
     color: #c26738; }
-  a p {
-    color: black; }
 
-.link-proxy {
-  color: #d57a4b; }
-
-.link-wrapper {
-  text-align: center; }
-
-.button-inline, .button-internal, .button-external {
-  border: none;
+.internal-link, .external-link {
   display: inline-block;
   line-height: 1;
   min-width: 185px;
@@ -531,27 +542,27 @@ a {
   text-align: center;
   text-decoration: none; }
   @media only screen and (max-width: 350px) {
-    .button-inline, .button-internal, .button-external {
+    .internal-link, .external-link {
       min-width: 140px;
       padding: 10px 15px 10px 15px; } }
 
-.button-internal {
+.internal-link {
   background-color: #ebdd3f;
   color: #00373d; }
-  .button-internal:hover, .button-internal:focus {
+  .internal-link:hover, .internal-link:focus {
     background-color: #f5e749;
     color: #00373d; }
-  .button-internal.icon-right:after {
+  .internal-link.icon-right:after {
     content: "\e605";
     vertical-align: middle; }
 
-.button-external {
+.external-link {
   background-color: #00373d;
   color: white; }
-  .button-external:hover, .button-external:focus {
+  .external-link:hover, .external-link:focus {
     background-color: #0f4c53;
     color: white; }
-  .button-external:after {
+  .external-link:after {
     content: "\e600";
     margin-left: 10px; }
 
@@ -623,6 +634,15 @@ dd {
   width: 110px;
   top: -35px;
   right: -43px; }
+
+th,
+td {
+  border-bottom: 1px solid #cccccc;
+  padding: 0.2em 0.6em; }
+
+th {
+  background-color: #ececec;
+  text-align: left; }
 
 video {
   max-width: 100%; }

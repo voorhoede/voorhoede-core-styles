@@ -7,7 +7,11 @@
 
 // mixins
 
+@import "mixins/border-radius";
+@import "mixins/box-sizing";
+@import "mixins/box-shadow";
 @import "mixins/rotate";
+@import "mixins/user-select";
 
 // typography
 
@@ -21,6 +25,7 @@
 @import "core/links";
 @import "core/lists";
 @import "core/ribbon";
+@import "core/table";
 @import "core/video";
 
 @import 'print'; // always last to overwrite

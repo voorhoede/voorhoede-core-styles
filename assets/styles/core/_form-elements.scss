@@ -1,4 +1,25 @@
-%button {
+input,
+textarea {
+	border: 1px solid $grey-medium;
+	padding: 6px 3px;
+}
+
+::-webkit-input-placeholder {
+	color: $grey-medium;
+}
+::-moz-placeholder {
+	color: $grey-medium;
+} /* firefox 19+ */
+:-ms-input-placeholder {
+	color: $grey-medium;
+} /* ie */
+input:-moz-placeholder {
+	color: $grey-medium;
+}
+
+
+
+button {
 	border: none;
 	display: inline-block;
 	line-height: 1;
@@ -6,15 +27,6 @@
 	padding: 20px 25px 18px 25px;
 	text-align: center;
 	text-decoration: none;
-
-	@media only screen and (max-width: 350px) {
-		min-width: 140px;
-		padding: 10px 15px 10px 15px;
-	}
-}
-
-.button-inline {
-	@extend %button;
 	background-color: $button-inline;
 	color: white;
 
@@ -23,8 +35,14 @@
 		background-color: $button-inline-hover;
 		color: white;
 	}
+
 	&.icon-down:after {
 		content: $icon-arrow-down;
 		vertical-align: middle;
+	}
+
+	@media only screen and (max-width: 350px) {
+		min-width: 140px;
+		padding: 10px 15px 10px 15px;
 	}
 }
