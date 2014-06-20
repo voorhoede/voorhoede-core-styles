@@ -1,5 +1,7 @@
 @import "normalize";
 
+// variables
+
 @import "variables/colours";
 @import "variables/icons";
 
@@ -7,13 +9,18 @@
 
 @import "mixins/rotate";
 
-// cores
+// typography
+
 @import "typography";
-@import "icons";
-@import "links";
-@import "lists";
-@import "form-elements";
-@import "blockquote";
-@import "figure";
+
+// cores
+@import "core/blockquote";
+@import "core/figure";
+@import "core/form-elements";
+@import "core/icons";
+@import "core/links";
+@import "core/lists";
+@import "core/ribbon";
+@import "core/video";
 
 @import 'print'; // always last to overwrite
