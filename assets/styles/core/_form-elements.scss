@@ -1,7 +1,22 @@
+fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+label[for] {
+	cursor: pointer;
+}
+
 input,
 textarea {
 	border: 1px solid $grey-medium;
 	padding: 6px 3px;
+}
+
+textarea {
+	overflow: auto; // Remove default vertical scroll bar in IE 8/9
+	vertical-align: top; // Improve readability and alignment in all browsers
 }
 
 ::-webkit-input-placeholder {
@@ -16,8 +31,6 @@ textarea {
 input:-moz-placeholder {
 	color: $grey-medium;
 }
-
-
 
 button {
 	border: none;
