@@ -20,6 +20,7 @@
 
 // cores
 @import "core/blockquote";
+@import "core/code";
 @import "core/figure";
 @import "core/form-elements";
 @import "core/icons";
@@ -28,6 +29,7 @@
 @import "core/lists";
 @import "core/ribbon";
 @import "core/table";
+@import "core/time";
 @import "core/video";
 
 @import 'print'; // always last to overwrite

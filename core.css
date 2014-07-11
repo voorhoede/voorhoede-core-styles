@@ -409,13 +409,6 @@ h3 {
 h4 {
   font-size: 1.059em; }
 
-code {
-  color: #00373d; }
-
-time {
-  color: #798386;
-  font-size: 0.824em; }
-
 blockquote {
   background: #f9f9f9;
   border-left: 2px solid #00373d;
@@ -440,6 +433,9 @@ blockquote:after {
 
 blockquote p {
   display: inline; }
+
+code {
+  color: #00373d; }
 
 figure {
   margin-bottom: 1em; }
@@ -676,6 +672,10 @@ td {
 th {
   background-color: #ececec;
   text-align: left; }
+
+time {
+  color: #798386;
+  font-size: 0.824em; }
 
 video {
   max-width: 100%; }
