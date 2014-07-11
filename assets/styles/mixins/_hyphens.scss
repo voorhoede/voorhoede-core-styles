@@ -1,0 +1,8 @@
+// Note (07-11-2014): The rules defining how hyphenation is performed are not explicitly defined by
+// the specification, so the exact hyphenation may vary from browser to browser.
+
+@mixin hyphens($properties) {
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	hyphens: none;
+}
