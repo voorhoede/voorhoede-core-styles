@@ -1,3 +1,7 @@
+// guide.scss is used only for the styling of not core elements. Do not include
+// it in your project
+@import "guide";
+
 @import "normalize";
 
 // variables
