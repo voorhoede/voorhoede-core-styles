@@ -81,6 +81,40 @@ h2 {
 	font-size: 1.5em;
 }
 
+.ruler-header {
+	font-size: 1.55em;
+	margin-bottom: 1.29em;
+	line-height: 1.3em;
+	position: relative;
+	text-align: center;
+}
+
+.ruler {
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background-color: $shadow;
+	top: 13px;
+	left: 0;
+
+	@media only screen and (max-width: 840px) {
+		display: none;
+	}
+}
+
+.ruler-text {
+	position: relative;
+	background-color: #ffffff;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+
+	@media only screen and (max-width: 840px) {
+		position: relative;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
 h3 {
 	font-size: 1.353em;
 }
