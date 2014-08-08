@@ -1,8 +1,9 @@
-main {
-  margin: 0 auto 4em auto;
-  width: 90%; }
+.guide-header,
+.guide-main {
+  margin: 2em auto 4em auto;
+  width: 80%; }
 
-section {
+.guide-section {
   margin-bottom: 2em; }
 
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
