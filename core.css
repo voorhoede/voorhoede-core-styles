@@ -5,6 +5,11 @@
 
 .guide-section {
   margin-bottom: 2em; }
+  .guide-section .internal-link {
+    margin-bottom: 1em; }
+
+.guide-section-header {
+  margin-bottom: 1em; }
 
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
@@ -445,6 +450,16 @@ h3 {
 
 h4 {
   font-size: 1.059em; }
+
+.tagline {
+  color: #00373d;
+  font-family: 'pt-sans-bold', sans-serif;
+  font-weight: normal;
+  font-size: 1.2em;
+  margin: 0;
+  padding: 20px 0;
+  text-transform: uppercase;
+  text-align: center; }
 
 blockquote {
   background: #f9f9f9;
