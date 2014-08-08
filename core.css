@@ -7,6 +7,9 @@
   margin-bottom: 2em; }
   .guide-section .internal-link {
     margin-bottom: 1em; }
+  .guide-section input,
+  .guide-section textarea {
+    margin-bottom: 1em; }
 
 .guide-section-header {
   margin-bottom: 1em; }
