@@ -107,7 +107,7 @@ h4 {
 
 .ruler-text {
 	position: relative;
-	background-color: #ffffff;
+	background-color: $white;
 	padding-left: 0.5em;
 	padding-right: 0.5em;
 
@@ -130,8 +130,8 @@ h4 {
 }
 
 .author {
-	border-left: 1px solid #798386;
-	color: #798386;
+	border-left: 1px solid $grey;
+	color: $grey;
 	font-size: 0.9em;
 	padding-left: 4px;
 }

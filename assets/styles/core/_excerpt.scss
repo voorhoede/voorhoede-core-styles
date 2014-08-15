@@ -1,0 +1,54 @@
+.excerpt {
+	@include clearfix();
+
+	.excerpt-image {
+		width: 50%;
+
+		@media only screen and (max-width: 840px) {
+			float: none;
+			margin: 0 auto;
+			width: 100%;
+			max-width: 355px;
+		}
+	}
+
+	.excerpt-text {
+		float: left;
+		width: 50%;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+
+		h3 {
+			@media only screen and (min-width: 840px) {
+				//make the portfolio case item's header smaller for the ribbon
+				width: 80%;
+			}
+		}
+	}
+
+	&:nth-child(odd) {
+		.excerpt-image {
+			float: left;
+
+			@media only screen and (max-width: 840px) {
+				text-align: center;
+				float: none;
+			}
+		}
+
+		.excerpt-text {
+			float: right;
+		}
+	}
+
+	&:nth-child(even) {
+		.excerpt-image {
+			float: right;
+		}
+
+		.excerpt-text {
+			float: left;
+		}
+	}
+}
