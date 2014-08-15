@@ -570,20 +570,20 @@ input:-moz-placeholder {
   color: #a2acaf; }
 
 button {
+  background-color: #ebdd3f;
   border: none;
+  color: #00373d;
   display: inline-block;
   line-height: 1;
   min-width: 185px;
   padding: 20px 25px 18px 25px;
   text-align: center;
-  text-decoration: none;
-  background-color: #e65e3e;
-  color: white; }
+  text-decoration: none; }
   button:hover, button:focus {
-    background-color: #eb6c4e;
-    color: white; }
-  button.icon-down:after {
-    content: "\e603";
+    background-color: #f5e749;
+    color: #00373d; }
+  button.icon-right:after {
+    content: "\e605";
     vertical-align: middle; }
   @media only screen and (max-width: 350px) {
     button {
