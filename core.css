@@ -3,6 +3,24 @@
   margin: 2em auto 4em auto;
   width: 80%; }
 
+.guide-header {
+  position: relative; }
+  .guide-header:before, .guide-header:after {
+    content: " ";
+    display: table; }
+  .guide-header:after {
+    clear: both; }
+  .guide-header img {
+    position: absolute; }
+
+.guide-header-titles {
+  padding-left: 95px;
+  width: 100%; }
+  .guide-header-titles h1 {
+    line-height: 1.2; }
+  .guide-header-titles h2 {
+    font-size: 1.353em; }
+
 .guide-section {
   margin-bottom: 2em; }
   .guide-section .internal-link {

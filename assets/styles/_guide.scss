@@ -1,9 +1,32 @@
+@import "mixins/clearfix";
 @import "variables/colours";
 
 .guide-header,
 .guide-main {
 	margin: 2em auto 4em auto;
 	width: 80%;
+}
+
+.guide-header {
+	@include clearfix();
+	position: relative;
+
+	img {
+		position: absolute;
+	}
+}
+
+.guide-header-titles {
+	padding-left: 95px;
+	width: 100%;
+
+	h1 {
+		line-height: 1.2;
+	}
+
+	h2 {
+		font-size: 1.353em;
+	}
 }
 
 .guide-section {
