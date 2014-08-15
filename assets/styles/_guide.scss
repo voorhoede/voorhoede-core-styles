@@ -45,3 +45,27 @@
 .guide-section-header {
 	margin-bottom: 1em;
 }
+
+.guide-icon-list {
+	@include clearfix();
+	list-style: none;
+	padding: 0;
+
+	dt,
+	dd {
+		line-height: 1;
+		padding: 4px;
+	}
+
+	dt {
+		clear: left;
+		float: left;
+		font-weight: normal;
+		margin-right: 1em;
+	}
+
+	dd {
+		float: left;
+		margin: 0;
+	}
+}

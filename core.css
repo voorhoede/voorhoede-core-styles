@@ -32,6 +32,27 @@
 .guide-section-header {
   margin-bottom: 1em; }
 
+.guide-icon-list {
+  list-style: none;
+  padding: 0; }
+  .guide-icon-list:before, .guide-icon-list:after {
+    content: " ";
+    display: table; }
+  .guide-icon-list:after {
+    clear: both; }
+  .guide-icon-list dt,
+  .guide-icon-list dd {
+    line-height: 1;
+    padding: 4px; }
+  .guide-icon-list dt {
+    clear: left;
+    float: left;
+    font-weight: normal;
+    margin-right: 1em; }
+  .guide-icon-list dd {
+    float: left;
+    margin: 0; }
+
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -680,7 +701,6 @@ dl {
   margin: 0 0 1em 0; }
 
 dt {
-  color: #00373d;
   font-weight: bold; }
   dt:after {
     content: ":"; }
