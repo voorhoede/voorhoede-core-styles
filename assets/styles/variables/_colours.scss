@@ -1,6 +1,3 @@
-// Colors
-// ------------------
-
 $dvh-red: 				#e65e3e;
 $dvh-green: 			#58b2bd;
 $dvh-blue: 				#00373d;
@@ -26,3 +23,9 @@ $grey-lighter:          #ececec;
 // shadow color
 
 $shadow: 				#ccc;
+
+// Alpha transparancy for background planes
+
+$plane-light: 			0.2;
+$plane-medium: 			0.4;
+$plane-dark: 			1;
