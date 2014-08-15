@@ -84,6 +84,136 @@ h4 {
 	font-size: 1.059em;
 }
 
+/* section-header component */
+.section-header {
+	@include rotate(-5deg);
+	display: table;
+	position: relative;
+	z-index: -2;
+	zoom: 1;
+	margin: 0 auto;
+	padding: 4em 0 2em 0;
+	text-transform: uppercase;
+	font: 1em 'pt-sans-bold', sans-serif;
+
+	.section-title {
+		font-size: 135px;
+	}
+
+	&:before,
+	&:after {
+		content: attr(data-content);
+		position: absolute;
+	}
+
+	&:before {
+		@include color-rgba($dvh-red, $plane-light);
+		font-size: 135px;
+		top: .645em;
+		left: -0.15em;
+	}
+
+	&:after {
+		@include color-rgba($dvh-yellow, $plane-light);
+		font-size: 180px;
+		top: 0.23em;
+		left: -0.5em;
+	}
+
+	@media only screen and (max-width: 840px) {
+		.section-title {
+			font-size: 90px;
+		}
+
+		&:before {
+			font-size: 90px;
+			top: 0.9em;
+			left: -0.15em;
+		}
+
+		&:after {
+			font-size: 120px;
+			top: 0.415em;
+		}
+	}
+
+	@media only screen and (max-width: 520px) {
+		.section-title {
+			font-size: 60px;
+		}
+
+		&:before {
+			font-size: 60px;
+			top: 1.26em;
+			left: -.15em;
+		}
+
+		&:after {
+			font-size: 90px;
+			top: .51em;
+			left: -.55em;
+		}
+	}
+
+	@media only screen and (max-width: 385px) {
+		.section-title {
+			font-size: 40px;
+		}
+
+		&:before {
+			font-size: 40px;
+			top: 1.81em;
+			left: -.15em;
+		}
+
+		&:after {
+			font-size: 60px;
+			top: .87em;
+			left: -.55em;
+		}
+	}
+}
+
+.section-title {
+	&:after {
+		@include color-rgba($dvh-yellow, $plane-dark);
+		content: attr(data-content);
+		position: absolute;
+		top: 0.501em;
+		left: 1%;
+		width: 200%;
+		height: 150%;
+		z-index: -10;
+	}
+
+	@media only screen and (max-width: 840px) {
+		&:after {
+			top: .75em;
+		}
+	}
+
+	@media only screen and (max-width: 520px) {
+		&:after {
+			top: 1.14em;
+		}
+	}
+
+	@media only screen and (max-width: 385px) {
+		&:after {
+			top: 1.7em;
+			//			left: .1em;
+		}
+	}
+
+}
+.lt-ie9 {
+	.section-header, .section-title {
+		&:after, &:before {
+			content: '';
+		}
+	}
+}
+
 .ruler-header {
 	font-size: 1.55em;
 	margin-bottom: 1.29em;
