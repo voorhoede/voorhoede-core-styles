@@ -1,10 +1,12 @@
-.guide-header,
-.guide-main {
-  margin: 2em auto 4em auto;
+.guide {
+  margin: 4em auto;
   width: 75%; }
-  .guide-header .section-header,
-  .guide-main .section-header {
-    z-index: 1; }
+
+.guide-header {
+  margin-bottom: 4em; }
+
+.guide-main .section-header {
+  z-index: 1; }
 
 .guide-header {
   position: relative; }
