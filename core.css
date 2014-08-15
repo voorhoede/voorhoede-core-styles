@@ -650,6 +650,32 @@ button {
       .iframe-wrapper iframe {
         height: 300px; } }
 
+img {
+  max-width: 100%;
+  border: none; }
+
+.centered-image img {
+  display: block;
+  margin: 0 auto; }
+.centered-image figcaption {
+  text-align: center; }
+
+.has-borders {
+  border-left-color: #f8cfc5;
+  border-left-color: rgba(230, 94, 62, 0.2);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33E65E3E, endColorstr=#33E65E3E);
+  zoom: 1;
+  border-right-color: #f8eec5;
+  border-right-color: rgba(230, 199, 62, 0.2);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33E6C73E, endColorstr=#33E6C73E);
+  zoom: 1;
+  border-style: solid;
+  border-width: 0 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: auto; }
+
 a {
   color: #d57a4b;
   cursor: pointer;

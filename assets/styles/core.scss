@@ -12,12 +12,12 @@
 
 // mixins
 
-@import "mixins/background-rgba";
 @import "mixins/border-radius";
 @import "mixins/box-shadow";
 @import "mixins/box-sizing";
 @import "mixins/clearfix";
 @import "mixins/hyphens";
+@import "mixins/rgba";
 @import "mixins/rotate";
 @import "mixins/user-select";
 @import "mixins/visually-hidden";
@@ -33,6 +33,7 @@
 @import "core/form-elements";
 @import "core/icons";
 @import "core/iframes";
+@import "core/images";
 @import "core/links";
 @import "core/lists";
 @import "core/panel";
