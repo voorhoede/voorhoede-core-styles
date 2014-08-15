@@ -1,5 +1,12 @@
 /* site-background component */
 
+.page {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
 .site-background {
 	position: absolute;
 	top: 0;
