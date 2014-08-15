@@ -12,6 +12,7 @@
 
 // mixins
 
+@import "mixins/background-rgba";
 @import "mixins/border-radius";
 @import "mixins/box-shadow";
 @import "mixins/box-sizing";
@@ -25,7 +26,6 @@
 @import "typography";
 
 // cores
-@import "core/background-rgba";
 @import "core/blockquote";
 @import "core/code";
 @import "core/figure";
