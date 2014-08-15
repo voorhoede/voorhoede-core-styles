@@ -17,6 +17,18 @@ module.exports = function (grunt) {
 				tagMessage: 'Version %VERSION%'
 			}
 		},
+        copy: {
+            main: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'assets/images/',
+                        src: '**/*',
+                        dest: 'images/'
+                    }
+                ]
+            }
+        },
 		sass: {
 			distribution: {
 				files: {
@@ -37,5 +49,5 @@ module.exports = function (grunt) {
 
 
 
-	grunt.registerTask('default', ['sass', 'watch']);
+	grunt.registerTask('default', ['copy', 'sass', 'watch']);
 };
