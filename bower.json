@@ -1,11 +1,15 @@
 {
   "name": "voorhoede-core-styles",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": ["core.scss", "core.css"],
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "components"
-  ],
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "assets",
+        "components",
+        "bower.json",
+        "Gruntfile.js",
+        "package.json"
+    ],
   "private": true
 }
