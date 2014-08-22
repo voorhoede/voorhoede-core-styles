@@ -1,0 +1,58 @@
+.core-layout {
+  margin: 4em auto;
+  width: 75%; }
+
+.core-layout-header {
+  margin-bottom: 4em; }
+
+.core-layout-main .section-header {
+  z-index: 1; }
+
+.core-layout-header {
+  position: relative; }
+  .core-layout-header:before, .core-layout-header:after {
+    content: " ";
+    display: table; }
+  .core-layout-header:after {
+    clear: both; }
+  .core-layout-header img {
+    position: absolute; }
+
+.core-layout-header-titles {
+  padding-left: 95px; }
+  .core-layout-header-titles h1 {
+    line-height: 1.2; }
+  .core-layout-header-titles h2 {
+    font-size: 1.353em; }
+
+.core-layout-section {
+  margin-bottom: 2em; }
+  .core-layout-section .internal-link {
+    margin-bottom: 1em; }
+  .core-layout-section input,
+  .core-layout-section textarea {
+    margin-bottom: 1em; }
+
+.core-layout-section-header {
+  margin-bottom: 1em; }
+
+.core-layout-icon-list {
+  list-style: none;
+  padding: 0; }
+  .core-layout-icon-list:before, .core-layout-icon-list:after {
+    content: " ";
+    display: table; }
+  .core-layout-icon-list:after {
+    clear: both; }
+  .core-layout-icon-list dt,
+  .core-layout-icon-list dd {
+    line-height: 1;
+    padding: 4px; }
+  .core-layout-icon-list dt {
+    clear: left;
+    float: left;
+    font-weight: normal;
+    margin-right: 1em; }
+  .core-layout-icon-list dd {
+    float: left;
+    margin: 0; }

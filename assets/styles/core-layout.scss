@@ -1,22 +1,22 @@
 @import "mixins/clearfix";
 @import "variables/colours";
 
-.guide {
+.core-layout {
 	margin: 4em auto;
 	width: 75%;
 }
 
-.guide-header {
+.core-layout-header {
 	margin-bottom: 4em;
 }
 
-.guide-main {
+.core-layout-main {
 	.section-header {
 		z-index: 1;
 	}
 }
 
-.guide-header {
+.core-layout-header {
 	@include clearfix();
 	position: relative;
 
@@ -25,7 +25,7 @@
 	}
 }
 
-.guide-header-titles {
+.core-layout-header-titles {
 	padding-left: 95px;
 
 	h1 {
@@ -37,7 +37,7 @@
 	}
 }
 
-.guide-section {
+.core-layout-section {
 	margin-bottom: 2em;
 
 	.internal-link {
@@ -50,11 +50,11 @@
 	}
 }
 
-.guide-section-header {
+.core-layout-section-header {
 	margin-bottom: 1em;
 }
 
-.guide-icon-list {
+.core-layout-icon-list {
 	@include clearfix();
 	list-style: none;
 	padding: 0;

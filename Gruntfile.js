@@ -32,7 +32,8 @@ module.exports = function (grunt) {
 		sass: {
 			distribution: {
 				files: {
-					'core.css': 'assets/styles/core.scss'
+					'core.css': 'assets/styles/core.scss',
+                    'core-layout.css': 'assets/styles/core-layout.scss'
 				}
 			}
 		},
