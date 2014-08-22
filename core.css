@@ -936,7 +936,7 @@ dd {
     left: -450%;
     height: 1000%;
     width: 1000%;
-    background: url(images/dot-background.min.png) center top; }
+    background: url(assets/images/dot-background.min.png) center top; }
   .site-background .bg-planes {
     position: absolute;
     width: 100%;
@@ -1221,14 +1221,14 @@ dd {
       margin-right: -14em; } }
   @media only screen and (max-width: 840px) {
     .site-background .background-pattern {
-      background: url(images/dot-background-small.png) center top; }
+      background: url(assets/images/dot-background-small.png) center top; }
     .site-background .bg-left-plane {
       margin-left: -19em; }
     .site-background .bg-right-plane {
       margin-right: -19em; } }
   @media only screen and (max-width: 540px) {
     .site-background .background-pattern {
-      background: url(images/dot-background-very-small.png) center top; }
+      background: url(assets/images/dot-background-very-small.png) center top; }
     .site-background .bg-left-plane {
       margin-left: -22em; }
     .site-background .bg-right-plane {

@@ -5,7 +5,8 @@
     "ignore": [
         "**/.*",
         "node_modules",
-        "assets",
+        "assets/styles",
+        "assets/images/guide-images",
         "components",
         "bower.json",
         "Gruntfile.js",
