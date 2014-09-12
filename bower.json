@@ -5,12 +5,12 @@
     "ignore": [
         "**/.*",
         "node_modules",
-        "assets/styles",
+        "assets/styles/core-layout.scss",
         "assets/images/guide-images",
         "components",
-        "bower.json",
         "Gruntfile.js",
-        "package.json"
+        "index.html",
+        "core-layout.css"
     ],
   "private": true
 }
