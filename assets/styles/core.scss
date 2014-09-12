@@ -2,9 +2,7 @@
 
 // variables
 
-@import "variables/colours";
-@import "variables/icons";
-@import "variables/paths";
+@import "variables";
 
 // mixins
 
@@ -17,10 +15,6 @@
 @import "mixins/rotate";
 @import "mixins/user-select";
 @import "mixins/visually-hidden";
-
-// typography
-
-@import "typography";
 
 // cores
 @import "core/blockquote";
@@ -39,6 +33,7 @@
 @import "core/site-background";
 @import "core/table";
 @import "core/time";
+@import "core/typography";
 @import "core/video";
 
 @import 'print'; // always last to overwrite
