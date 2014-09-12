@@ -6,7 +6,6 @@
         "**/.*",
         "node_modules",
         "assets/styles/core-layout.scss",
-        "assets/styles/variables",
         "assets/images/guide-images",
         "components",
         "Gruntfile.js",
