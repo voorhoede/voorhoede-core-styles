@@ -1,6 +1,6 @@
 {
   "name": "voorhoede-core-styles",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Primary styles for all Voorhoede products.",
   "main": [
     "core.scss",
