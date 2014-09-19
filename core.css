@@ -354,6 +354,7 @@ td,
 th {
   padding: 0; }
 
+/* Grid Mixins */
 blockquote {
   background: #f9f9f9;
   border-left: 2px solid #00373d;
@@ -466,8 +467,7 @@ button {
   text-align: center;
   text-decoration: none; }
   button:hover, button:focus {
-    background-color: #f5e749;
-    color: #00373d; }
+    background-color: #eb6c4e; }
   button.icon-right:after {
     content: "\e605";
     vertical-align: middle; }
@@ -672,31 +672,31 @@ dd {
   @media only screen and (max-width: 600px) {
     .panel {
       padding: 1.5em 1em; } }
-  .panel:nth-child(odd) .panel-image {
+  .panel:nth-child(odd) .panel-image, .panel.odd .panel-image {
     float: left; }
     @media only screen and (max-width: 840px) {
-      .panel:nth-child(odd) .panel-image {
+      .panel:nth-child(odd) .panel-image, .panel.odd .panel-image {
         text-align: center;
         float: none; } }
-  .panel:nth-child(odd) .panel-text {
+  .panel:nth-child(odd) .panel-text, .panel.odd .panel-text {
     float: left;
     padding-left: 2em;
     text-align: left; }
     @media only screen and (max-width: 840px) {
-      .panel:nth-child(odd) .panel-text {
+      .panel:nth-child(odd) .panel-text, .panel.odd .panel-text {
         padding-left: 0; } }
-  .panel:nth-child(even) .panel-image {
+  .panel:nth-child(even) .panel-image, .panel.even .panel-image {
     float: right; }
     @media only screen and (max-width: 840px) {
-      .panel:nth-child(even) .panel-image {
+      .panel:nth-child(even) .panel-image, .panel.even .panel-image {
         text-align: center;
         float: none; } }
-  .panel:nth-child(even) .panel-text {
+  .panel:nth-child(even) .panel-text, .panel.even .panel-text {
     float: right;
     padding-right: 2em;
     text-align: right; }
     @media only screen and (max-width: 840px) {
-      .panel:nth-child(even) .panel-text {
+      .panel:nth-child(even) .panel-text, .panel.even .panel-text {
         padding-right: 0;
         text-align: left; } }
 
