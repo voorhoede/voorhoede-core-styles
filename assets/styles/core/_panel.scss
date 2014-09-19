@@ -12,4 +12,25 @@
 	@media only screen and (max-width: 600px) {
 		padding: 1.5em 1em;
 	}
+
+    .panel-image {
+        float: left;
+        width: 50%;
+
+        @media only screen and (max-width: 840px) {
+            float: none;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 355px;
+        }
+    }
+
+    .illustrated-panel {
+
+        .panel-text {
+            @include box-sizing(border-box);
+            float: left;
+            width: 50%;
+        }
+    }
 }
