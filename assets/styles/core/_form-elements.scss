@@ -45,8 +45,7 @@ button {
 
 	&:hover,
 	&:focus {
-		background-color: $button-internal-hover;
-		color: $button-external;
+		background-color: $button-inline-hover;;
 	}
 	&.icon-right:after {
 		content: $icon-arrow-right;
