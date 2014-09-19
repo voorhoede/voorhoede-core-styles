@@ -456,9 +456,9 @@ input:-moz-placeholder {
   color: #a2acaf; }
 
 button {
-  background-color: #ebdd3f;
+  background-color: #e65e3e;
   border: none;
-  color: #00373d;
+  color: #fff;
   display: inline-block;
   line-height: 1;
   min-width: 185px;
@@ -470,6 +470,9 @@ button {
     color: #00373d; }
   button.icon-right:after {
     content: "\e605";
+    vertical-align: middle; }
+  button.icon-down:after {
+    content: "\e603";
     vertical-align: middle; }
   @media only screen and (max-width: 350px) {
     button {
@@ -627,6 +630,9 @@ a {
     content: "\e600";
     margin-left: 10px; }
 
+.link-wrapper {
+  text-align: center; }
+
 .bullet-list {
   font-size: 1.0em;
   margin: 0 0 1em 1em;
@@ -654,8 +660,10 @@ dd {
   box-sizing: border-box;
   background-color: #fff;
   display: block;
+  margin: 0 auto 2em;
   padding: 2em 2.5em;
-  position: relative; }
+  position: relative;
+  width: 83.3%; }
   .panel:before, .panel:after {
     content: " ";
     display: table; }
@@ -664,6 +672,50 @@ dd {
   @media only screen and (max-width: 600px) {
     .panel {
       padding: 1.5em 1em; } }
+  .panel:nth-child(odd) .panel-image {
+    float: left; }
+    @media only screen and (max-width: 840px) {
+      .panel:nth-child(odd) .panel-image {
+        text-align: center;
+        float: none; } }
+  .panel:nth-child(odd) .panel-text {
+    float: left;
+    padding-left: 2em;
+    text-align: left; }
+    @media only screen and (max-width: 840px) {
+      .panel:nth-child(odd) .panel-text {
+        padding-left: 0; } }
+  .panel:nth-child(even) .panel-image {
+    float: right; }
+    @media only screen and (max-width: 840px) {
+      .panel:nth-child(even) .panel-image {
+        text-align: center;
+        float: none; } }
+  .panel:nth-child(even) .panel-text {
+    float: right;
+    padding-right: 2em;
+    text-align: right; }
+    @media only screen and (max-width: 840px) {
+      .panel:nth-child(even) .panel-text {
+        padding-right: 0;
+        text-align: left; } }
+
+.panel-image {
+  float: left;
+  width: 50%; }
+  @media only screen and (max-width: 840px) {
+    .panel-image {
+      float: none;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 355px; } }
+
+.illustrated-panel .panel-text {
+  float: left;
+  width: 50%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 .has-ribbon {
   position: relative; }

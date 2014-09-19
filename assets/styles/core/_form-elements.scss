@@ -33,9 +33,9 @@ input:-moz-placeholder {
 }
 
 button {
-	background-color: $button-internal;
+	background-color: $button-inline;
 	border: none;
-	color: $button-external;
+	color: #fff;
 	display: inline-block;
 	line-height: 1;
 	min-width: 185px;
@@ -52,6 +52,10 @@ button {
 		content: $icon-arrow-right;
 		vertical-align: middle;
 	}
+    &.icon-down:after {
+        content: $icon-arrow-down;
+        vertical-align: middle;
+    }
 
 	@media only screen and (max-width: 350px) {
 		min-width: 140px;
