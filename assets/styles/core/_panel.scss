@@ -5,72 +5,14 @@
     background-color: #fff;
     display: block;
     margin: 0 auto 2em;
-    padding: 2em 2.5em;
+    padding: 1.5em 1em;
     position: relative;
 
     @media only screen and (min-width: 839px) {
         width: 83%;
     }
 
-    &:nth-child(odd),
-    &.odd {
-        .panel-image {
-            float: left;
-            @media only screen and (max-width: 840px) {
-                text-align: center;
-                float: none;
-            }
-        }
-        .panel-text {
-            float: left;
-            padding-left: 2em;
-            text-align: left;
-            @media only screen and (max-width: 840px) {
-                padding-left: 0;
-            }
-        }
-    }
-
-    &:nth-child(even),
-    &.even {
-        .panel-image {
-            float: right;
-            @media only screen and (max-width: 840px) {
-                text-align: center;
-                float: none;
-            }
-        }
-
-        .panel-text {
-            float: right;
-            padding-right: 2em;
-            text-align: right;
-            @media only screen and (max-width: 840px) {
-                padding-right: 0;
-                text-align: left;
-            }
-        }
-    }
-}
-
-.panel-image {
-    float: left;
-    width: 50%;
-
-    @media only screen and (max-width: 840px) {
-        float: none;
-        margin: 0 auto;
-        width: 100%;
-        max-width: 355px;
-    }
-}
-
-.illustrated-panel {
-    .panel-text {
-        float: left;
-        width: 50%;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
+    @media only screen and (min-width: 599px) {
+        padding: 2em 2.5em;
     }
 }
