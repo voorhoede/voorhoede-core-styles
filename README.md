@@ -2,8 +2,6 @@
 
 Primary styles for all Voorhoede products.
 
-__Available as a Bower component__
-
 The Voorhoede core styles are available as a Bower component. Run:
 
 	$ bower install voorhoede-core-styles
