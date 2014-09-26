@@ -1,6 +1,6 @@
 {
   "name": "voorhoede-core-styles",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "main": ["core.scss", "core.css"],
     "ignore": [
         "**/.*",
