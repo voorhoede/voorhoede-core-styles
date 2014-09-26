@@ -1,54 +1,70 @@
 .excerpt {
-	@include clearfix();
+    @include clearfix();
 
-	.excerpt-image {
-		width: 50%;
+    .excerpt-image,
+    .excerpt-text {
+        @include box-sizing(border-box);
 
-		@media only screen and (max-width: 840px) {
-			float: none;
-			margin: 0 auto;
-			width: 100%;
-			max-width: 355px;
-		}
-	}
+        @media only screen and (min-width: 839px) {
+            margin: 0 auto;
+            width: 50%;
+        }
+    }
 
-	.excerpt-text {
-		float: left;
-		width: 50%;
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
+    .excerpt-image {
+        margin: 0 auto;
+        max-width: 355px;
 
-		h3 {
-			@media only screen and (min-width: 840px) {
-				//make the portfolio case item's header smaller for the ribbon
-				width: 80%;
-			}
-		}
-	}
+        img {
+            height: auto;
+            width: 100%;
+        }
+    }
 
-	&:nth-child(odd) {
-		.excerpt-image {
-			float: left;
+    h3 {
+        text-align: center;
 
-			@media only screen and (max-width: 840px) {
-				text-align: center;
-				float: none;
-			}
-		}
+        @media only screen and (min-width: 839px) {
+            text-align: left;
+        }
+    }
 
-		.excerpt-text {
-			float: right;
-		}
-	}
+    p {
+        color: black;
+    }
 
-	&:nth-child(even) {
-		.excerpt-image {
-			float: right;
-		}
 
-		.excerpt-text {
-			float: left;
-		}
-	}
+    .odd {
+        .excerpt-image {
+            text-align: center;
+
+            @media only screen and (min-width: 839px) {
+                float: left;
+            }
+        }
+
+        .excerpt-text {
+            @media only screen and (min-width: 839px) {
+                float: right;
+                padding-left: 2em;
+            }
+        }
+    }
+
+    .even {
+        .excerpt-image {
+            text-align: center;
+
+            @media only screen and (min-width: 839px) {
+                float: right;
+            }
+        }
+
+        .excerpt-text {
+            @media only screen and (min-width: 839px) {
+                float: left;
+                padding-right: 2em;
+            }
+        }
+    }
 }
