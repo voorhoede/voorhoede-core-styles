@@ -10,6 +10,6 @@ to include to core styles in your project.
 
 __Install dependencies__
 
-Bower requires [NodeJS](http://nodejs.org/) and NPM (comes with NodeJS). Install Bower with:
+Bower requires [NodeJS](http://nodejs.org/) and NPM (comes with NodeJS) to be installed. Install Bower with:
 
     $ npm install -g bower
