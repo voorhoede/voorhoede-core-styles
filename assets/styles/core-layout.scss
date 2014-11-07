@@ -1,5 +1,6 @@
 @import "mixins/clearfix";
 @import "variables/colours";
+@import "variables/typography";
 
 .core-layout {
 	margin: 4em auto;
@@ -38,7 +39,7 @@
 }
 
 .core-layout-section {
-	margin-bottom: 2em;
+	margin-bottom: 3em;
 
 	.internal-link {
 		margin-bottom: 1em;
@@ -50,30 +51,125 @@
 	}
 }
 
-.core-layout-section-header {
-	margin-bottom: 1em;
+.core-layout-section-content {
+	margin-bottom: 2em;
 }
 
-.core-layout-icon-list {
-	@include clearfix();
-	list-style: none;
+.core-layout-section-header {
+	margin-bottom: 1.5em;
+	border-bottom: 1px solid;
+}
+
+.core-layout-swatches,
+.core-layout-icons {
+	float: none;
+	margin: 0 0 2em 0;
 	padding: 0;
+	width: 100%;
+	list-style: none;
+	overflow: hidden;
+	text-align: center;
 
-	dt,
-	dd {
-		line-height: 1;
-		padding: 4px;
-	}
-
-	dt {
-		clear: left;
+	li {
 		float: left;
-		font-weight: normal;
-		margin-right: 1em;
+		width: 120px;
+		margin: 0 16px 0 16px;
+		box-sizing: border-box;
 	}
+}
 
-	dd {
-		float: left;
-		margin: 0;
-	}
+.core-layout-icons li {
+	margin-bottom: 2em;
+}
+
+.core-layout-swatch {
+	display: block;
+	box-sizing: border-box;
+	width:  80px;
+	height: 80px;
+	border-width: 14px;
+	border-style: solid;
+	border-color: #e3e3e3;
+	margin: 0 auto;
+}
+
+.core-layout-swatches li{
+	min-height: 200px;
+}
+
+.core-layout-info {
+	display: block;
+	text-align: center;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	font-size: 0.9em;
+}
+
+
+
+[title="dvh-blue"] .core-layout-swatch {
+	background-color: $dvh-blue;
+}
+
+[title="dvh-yellow"] .core-layout-swatch {
+	background-color: $dvh-yellow;
+}
+
+[title="dvh-red"] .core-layout-swatch {
+	background-color: $dvh-red;
+}
+
+[title="dvh-green"] .core-layout-swatch {
+	background-color: $dvh-green;
+}
+
+[title="button-internal"] .core-layout-swatch {
+	background-color: $button-internal;
+}
+
+[title="button-internal-hover"] .core-layout-swatch {
+	background-color: $button-internal-hover;
+}
+
+[title="button-inline"] .core-layout-swatch {
+	background-color: $button-inline;
+}
+
+[title="button-inline-hover"] .core-layout-swatch {
+	background-color: $button-inline-hover;
+}
+[title="button-external"] .core-layout-swatch {
+	background-color: $button-external;
+}
+
+[title="button-external-hover"] .core-layout-swatch {
+	background-color: $button-external-hover;
+}
+
+[title="inline-link"] .core-layout-swatch {
+	background-color: $inline-link;
+}
+
+[title="inline-link-hover"] .core-layout-swatch {
+	background-color: $inline-link-hover;
+}
+
+[title="shadow"] .core-layout-swatch {
+	background-color: $shadow;
+}
+
+[title="black"] .core-layout-swatch {
+	background-color: $black;
+}
+
+[title="grey"] .core-layout-swatch {
+	background-color: $grey;
+}
+
+.primary-font {
+	font-family: $body-font;
+}
+
+.secondary-font {
+	font-family: $body-font-alt;
 }

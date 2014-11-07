@@ -26,33 +26,106 @@
     font-size: 1.353em; }
 
 .core-layout-section {
-  margin-bottom: 2em; }
+  margin-bottom: 3em; }
   .core-layout-section .internal-link {
     margin-bottom: 1em; }
   .core-layout-section input,
   .core-layout-section textarea {
     margin-bottom: 1em; }
 
-.core-layout-section-header {
-  margin-bottom: 1em; }
+.core-layout-section-content {
+  margin-bottom: 2em; }
 
-.core-layout-icon-list {
+.core-layout-section-header {
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid; }
+
+.core-layout-swatches,
+.core-layout-icons {
+  float: none;
+  margin: 0 0 2em 0;
+  padding: 0;
+  width: 100%;
   list-style: none;
-  padding: 0; }
-  .core-layout-icon-list:before, .core-layout-icon-list:after {
-    content: " ";
-    display: table; }
-  .core-layout-icon-list:after {
-    clear: both; }
-  .core-layout-icon-list dt,
-  .core-layout-icon-list dd {
-    line-height: 1;
-    padding: 4px; }
-  .core-layout-icon-list dt {
-    clear: left;
+  overflow: hidden;
+  text-align: center; }
+  .core-layout-swatches li,
+  .core-layout-icons li {
     float: left;
-    font-weight: normal;
-    margin-right: 1em; }
-  .core-layout-icon-list dd {
-    float: left;
-    margin: 0; }
+    width: 120px;
+    margin: 0 16px 0 16px;
+    box-sizing: border-box; }
+
+.core-layout-icons li {
+  margin-bottom: 2em; }
+
+.core-layout-swatch {
+  display: block;
+  box-sizing: border-box;
+  width: 80px;
+  height: 80px;
+  border-width: 14px;
+  border-style: solid;
+  border-color: #e3e3e3;
+  margin: 0 auto; }
+
+.core-layout-swatches li {
+  min-height: 200px; }
+
+.core-layout-info {
+  display: block;
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-size: 0.9em; }
+
+[title="dvh-blue"] .core-layout-swatch {
+  background-color: #00373d; }
+
+[title="dvh-yellow"] .core-layout-swatch {
+  background-color: #e6c73e; }
+
+[title="dvh-red"] .core-layout-swatch {
+  background-color: #e65e3e; }
+
+[title="dvh-green"] .core-layout-swatch {
+  background-color: #58b2bd; }
+
+[title="button-internal"] .core-layout-swatch {
+  background-color: #ebdd3f; }
+
+[title="button-internal-hover"] .core-layout-swatch {
+  background-color: #f5e749; }
+
+[title="button-inline"] .core-layout-swatch {
+  background-color: #e65e3e; }
+
+[title="button-inline-hover"] .core-layout-swatch {
+  background-color: #eb6c4e; }
+
+[title="button-external"] .core-layout-swatch {
+  background-color: #00373d; }
+
+[title="button-external-hover"] .core-layout-swatch {
+  background-color: #0f4c53; }
+
+[title="inline-link"] .core-layout-swatch {
+  background-color: #d57a4b; }
+
+[title="inline-link-hover"] .core-layout-swatch {
+  background-color: #c26738; }
+
+[title="shadow"] .core-layout-swatch {
+  background-color: #cccccc; }
+
+[title="black"] .core-layout-swatch {
+  background-color: black; }
+
+[title="grey"] .core-layout-swatch {
+  background-color: #798386; }
+
+.primary-font {
+  font-family: "Questrial"; }
+
+.secondary-font {
+  font-family: Arial, Calibri, Verdana, sans-serif; }
