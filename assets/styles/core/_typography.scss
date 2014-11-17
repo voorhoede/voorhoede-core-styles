@@ -1,21 +1,3 @@
-// headings
-@font-face {
-    font-family: 'pt-sans-bold';
-    src: url('#{$path-fonts}pt-sans-bold.eot');
-    src: url('#{$path-fonts}pt-sans-bold.eot?#iefix') format('embedded-opentype'),
-    url('#{$path-fonts}pt-sans-bold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-// body copy
-@font-face {
-    font-family: 'Questrial';
-    src: url('#{$path-fonts}questrial-regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
     font-family: $body-font-family;
     font-size: $body-font-size;
